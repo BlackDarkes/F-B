@@ -1,6 +1,7 @@
 import express, { Express } from "express";
 import cors from "cors";
 import "dotenv/config";
+import path from "path";
 
 import * as Controllers from "./controllers/plants.controller";
 import { pool } from "./db/connect";
@@ -11,6 +12,7 @@ const HOST: string | undefined = process.env.API_HOST || "0.0.0.0";
 
 app.use(cors());
 app.use(express.json());
+app.use("/public", express.static(path.join(__dirname, "../public/")));
 
 pool.getConnection()  
   .then((conn) => {
