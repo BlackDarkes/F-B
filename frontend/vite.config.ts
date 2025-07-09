@@ -1,10 +1,19 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    svgr({
+      svgrOptions: {
+        icon: true,
+      },
+    }),
+  ],
   base: "/",
   server: {
     port: 3000,
@@ -17,7 +26,15 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         api: "modern",
+        additionalData: `
+          @use "tailwindcss" as *;
+        `,
       },
     },
   },
+  resolve: {
+      alias: {
+        "@": "./src/"
+      }
+  }
 });

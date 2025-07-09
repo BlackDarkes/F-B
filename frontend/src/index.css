@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "./styles/base/font.css";
+@import "./styles/base/normalize.css";
+
+body {
+  font-family: "Open Sans";
+  background-color: #1d2f30;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant";
+}
+
+button {
+  color: #bae249;
+  transition: 0.4s;
+}
+
+button:hover {
+  color: #91ac46;
+}
+
+li {
+  outline: 0;
+}
