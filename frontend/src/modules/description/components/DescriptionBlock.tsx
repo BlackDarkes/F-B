@@ -12,7 +12,7 @@ export const DescriptionBlock = () => {
       </p>
       <button
         type='button'
-        className='flex items-center gap-x-[8px] outline-1 outline-offset-[5px] outline-transparent duration-400 focus-visible:outline-[#83A440]'
+        className='flex items-center gap-x-[8px] text-[#BAE249] outline-1 outline-offset-[5px] outline-transparent duration-400 hover:text-[#91ac46] active:text-[#688B05] focus-visible:outline-[#83A440]'
       >
         Исследовать <IconArrow className='w-[43px]' />
       </button>

@@ -5,7 +5,7 @@ import { Nav } from "./components/nav/Nav";
 
 export const Header = () => {
   return (
-    <header className='fixed top-0 left-0 w-[100%] text-white z-300'>
+    <header className='absolute top-0 left-0 w-[100%] text-white z-300'>
       <div className='bg-[#1D2F30]'>
         <Container className="flex items-center justify-between py-[20px]">
           <Nav />
