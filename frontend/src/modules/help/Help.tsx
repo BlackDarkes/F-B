@@ -1,6 +1,17 @@
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
 import { Container } from "../../components/container/Container";
 import { FromHelp } from "./components/formHelp/FromHelp";
 import { HeadForm } from "./components/headForm/HeadForm";
+
+const schema = z.object({
+  name: z.string(),
+  email: z.string().email("Некорректный email"),
+})
+
+type FormData = z.infer<typeof schema>;
 
 export const Help = () => {
   return (
