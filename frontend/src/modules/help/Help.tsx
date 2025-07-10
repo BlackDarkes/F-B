@@ -6,7 +6,7 @@ export const Help = () => {
   return (
     <section className='relative py-[60px]'>
       <div
-        className='absolute inset-0 bg-center bg-no-repeat opacity-30'
+        className='absolute inset-0 bg-center bg-no-repeat h-[100%] opacity-30'
         style={{ backgroundImage: "url(./images/main/help.png)" }}
       />
       <Container className='relative z-300'>
