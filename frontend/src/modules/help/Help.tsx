@@ -1,0 +1,18 @@
+import { Container } from "../../components/container/Container";
+import { FromHelp } from "./components/formHelp/FromHelp";
+import { HeadForm } from "./components/headForm/HeadForm";
+
+export const Help = () => {
+  return (
+    <section className='relative py-[60px]'>
+      <div
+        className='absolute inset-0 bg-center bg-no-repeat opacity-30'
+        style={{ backgroundImage: "url(./images/main/help.png)" }}
+      />
+      <Container className='relative z-300'>
+        <HeadForm />
+        <FromHelp />
+      </Container>
+    </section>
+  );
+};
