@@ -34,7 +34,7 @@ export const ArtifactBlock = ({ width }: IArtifactBlock) => {
           </div>
           <button
             type='button'
-            className='flex items-center gap-x-[8px] text-[#0B1919] hover:text-[#688B05] focus-visible:outline-1 focus-visible:outline-offset-[5px] focus-visible:outline-[#83A440]'
+            className='flex items-center gap-x-[8px] text-[#0B1919] hover:text-[#688B05] focus-visible:outline-1 focus-visible:outline-offset-[5px] focus-visible:outline-[#83A440] active:text-[#688B05]'
           >
             Читать далее <IconArrow className='w-[43px]' />
           </button>

@@ -4,7 +4,7 @@ export const Navigation = () => {
       <li>
         <a
           href='#'
-          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440]'
+          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440] active:text-[#688B05]'
         >
           Каталог
         </a>
@@ -12,7 +12,7 @@ export const Navigation = () => {
       <li>
         <a
           href='#'
-          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440]'
+          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440] active:text-[#688B05]'
         >
           Галерея
         </a>
@@ -20,7 +20,7 @@ export const Navigation = () => {
       <li className='shrink-0'>
         <a
           href='#'
-          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440]'
+          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440] active:text-[#688B05]'
         >
           О лаборатории
         </a>
@@ -28,7 +28,7 @@ export const Navigation = () => {
       <li>
         <a
           href='#'
-          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440]'
+          className='px-[5px] outline-0 duration-400 hover:text-[#BAE249] focus-visible:shadow-[0_0_0_1px_#83A440] active:text-[#688B05]'
         >
           Контакты
         </a>

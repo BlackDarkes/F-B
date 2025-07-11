@@ -22,8 +22,8 @@ export const Plants = () => {
 
   const { sliderRef, currentSlide, scrollToPrev, scrollToNext } = useSlider(300);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (isError) return <p>Error: {error.message}</p>;
+  if (isLoading) return <p className="text-white py-[60px] text-center">Загрузка артефактов...</p>;
+  if (isError) return <p className="text-white py-[60px] text-center">Error: {error.message}</p>;
 
   return (
     <section className='py-[60px]'>
