@@ -7,7 +7,7 @@ export const Plant = ({ plant }: { plant: IPlants }) => {
         <h3 className='absolute top-[16px] left-[16px] h-[24px] w-[24px] rounded-[50%] border-1 text-center leading-[100%] text-[#899D9D] select-none'>
           {plant.rating}
         </h3>
-        <img src={plant.image} alt='' />
+        <img src={`${import.meta.env.VITE_API_URL}/..${plant.image}`} alt='' />
       </div>
       <div className='flex flex-col items-start justify-between h-[313px] border-1 border-[#0B1919] p-[16px_16px_24px_16px]'>
         <div>
